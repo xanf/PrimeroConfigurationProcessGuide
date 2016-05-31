@@ -1,0 +1,14 @@
+{
+    "title" : "Primero Configuration Process Guide",
+    "github" : false,
+    "plugins" : [ "-mathjax", "-mixpanel"],
+    "links" : {
+      "about" : false,
+      "issues" : false,
+      "sharing" : {
+        "google" : false,
+        "twitter" : false,
+        "facebook" : false
+      }
+    }
+}
