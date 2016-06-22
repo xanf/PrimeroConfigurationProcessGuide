@@ -1,5 +1,5 @@
 Overview
---------
+========
 
 Implementing Primero in a way that best fits your specific needs is a
 process that consists of five steps: Analyze, Plan, Configure, Verify,
@@ -8,11 +8,11 @@ and Rollout.
 ![](img/image09.png)
 
 Analyze
--------
+=======
 
 Analysis is the beginning of your configuration process and where you
 examine how Primero can be adjusted to meet the exact needs faced by
-yours and other organizations in the area of interest. Primero can be
+your and other organizations in the area of interest. Primero can be
 modified to meet these needs through a number of variables: Forms,
 Lookups, Locations, Agencies, Agencies, Roles, User Groups, Reports,
 Programs, Modules, Contact Information, and System Settings. While all
@@ -29,9 +29,9 @@ hopes to achieve, the sort of information you want to be able to
 capture, and how different actors in the various organizations on the
 ground will be interacting.
 
-*Dos and Don’ts:*
+_*Dos and Don’ts:*_
 
-It is important to note that while most of the variables we have
+_It is important to note that while most of the variables we have
 mentioned are easy enough to manage through Primero’s user interface,
 Locations present a challenge due to the simple issue of how many
 there usually are for a single implementation. Considering the
@@ -40,12 +40,16 @@ cities, and districts into Primero, the best option for creating a
 full set of locations is to contact Primero IT Support, who will be
 able to automate the process for you. In other words, **DON’T**
 attempt to add a large number of locations manually. **DO** contact
-Primero IT Support to help you with the process.
+Primero IT Support to help you with the process._
 
 The first of the above variables you will want to consider is the Role,
 and depending on how you configure Roles, the Users you create later
-on--Users are not handled by the configuration bundle; see **Primero
-Administration and Configuration Guide**--will quickly fall into place.
+on will quickly fall into place.
+
+_Users are not handled by the configuration bundle; see the [*Primero Administration and Configuration
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#user-and-role-managementv)_
+
+
 After all, a User is only as good as its Role, which allows it to view
 and edit information. When you do consider your Roles, you must think of
 the interactions that take place on a daily basis between actors. What
@@ -76,7 +80,7 @@ inappropriate, and you would do better to use a radio or drop down
 field, where the range of responses is limited to a set few.
 
 Plan
-----
+====
 
 Once you have an idea for what sorts of changes you want to make to the
 baseline configuration of Primero, it is usually a good idea to map out
@@ -114,7 +118,7 @@ Below these, there is a row for a new field,
 
 *Dos and Don’ts:*
 
-> An important thing to note here is the “Implementation Notes” column
+> _An important thing to note here is the “Implementation Notes” column
 > for the “source\_interview\_multiselect” field, which notes that the
 > field is basically a copy of the deleted “source\_interview” field
 > above it, but with a new database name, and a multi-select drop down
@@ -128,7 +132,7 @@ Below these, there is a row for a new field,
 > field, this is a good model to follow. In short, **DON’T** change the
 > field type of an already-existing field. **DO** replace the old field
 > by hiding or deleting it, and then creating a new field with a new
-> database name and the new field type you want to use.
+> database name and the new field type you want to use._
 
 For Roles, it can be helpful to draw a simple organizational chart, and
 then create a more detailed map of each role you want to create by way
@@ -137,10 +141,10 @@ roles each role can manage, it may also be helpful to draw out an
 organizational tree, outlining which team members should be able to
 manage each other’s roles’ permissions. For a more detailed description
 of the permissions roles grant and the role management process, please
-consult the Primero Administration and Configuration Guide.
+consult the [*Primero Administration and Configuration Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#user-and-role-management).
 
 Configure
----------
+=========
 
 It is important to understand, before talking about configuration, that
 the Configure and Verify stages are part and parcel of a cycle you will
@@ -171,9 +175,7 @@ your test instance so that you do not accidentally lose configuration
 changes that had already been made to the main instance.
 
 To do this, start off by following the steps for exporting a
-configuration bundle outlined in the [*Primero Administration and
-Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub).
+configuration bundle outlined [here](#configuration-bundles)
 Once you have followed these steps, you should be left with a .zip file.
 Double-click on it. A window will pop up asking you for the password to
 decrypt your file.
@@ -200,11 +202,11 @@ you do not accidentally erase any configuration changes that have
 already been made there. To import the config into your test instance,
 follow the steps for importing a configuration bundle located in the
 [*Primero Administration and Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub).
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 
 Once this is done, you can start making your first set of changes on the
 test instance. In general, your changes should be made in the following
-order: **Lookups -&gt; Forms -&gt; Roles**. The reason for this is a
+order: **Lookups > Forms > Roles**. The reason for this is a
 simple matter of dependency. Creating form fields often requires using
 lookups; creating a role involves deciding which forms the role will
 have access to. (You will also want to do this before creating user
@@ -216,7 +218,7 @@ you forgot to create in the first place.
 
 For information on how to actually make particular changes in Primero,
 consult the [*Primero Administration and Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub).
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#testing-administrative-changes-and-data-loads).
 As a matter of practice, do not make too many changes at once; try
 creating a form and a few of its text fields, a multi-select field and
 its lookup, or a role and a user to which said role is assigned. Smaller
@@ -224,8 +226,97 @@ sets of changes are easier to reverse, and when something goes wrong
 with such a small group, it is easier to tell what might have caused the
 error. Once you have made your changes, it is time to verify them.
 
+Configuration Bundles
+---------------------
+
+Configuration bundles allow you to export and import the configuration
+for a Primero instance. This allows you to basically duplicate the
+configuration of one instance and can greatly simplify the setup of a
+new instance: simply export the desired configuration from an existing
+instance and import it into the new. There are two types of bundles: a
+user bundle and a configuration bundle. The user bundle includes just
+the users and their corresponding information and the configuration
+bundle includes all other data in the system except for the record data
+itself.
+
+A bundle import will preserve any existing data that isn’t part of the
+import, but will overwrite data that is part of the import. For example,
+if you had an agency *IRC* in an instance and then imported a
+configuration bundle with the agency *Save the Children*, you would have
+an instance with both of those agencies. If you had an existing agency
+*Save the Children* with a telephone of *+1-555-555-5555* and the same
+agency in the bundle had a telephone of *+1-444-444-4444*, the latter
+phone number would exist in the system after a bundle import.
+
+Import and Export Bundles
+------------------------
+
+To do the import, login as the *instance* superuser and go to the
+*Settings* tab. Under the default subsection *Users*, you should see the
+Action button with the options to Export and Import. Once you’ve
+selected the desired option, you should see another option for either
+Users or the Configuration Bundle.
+
+![](img/image03.png)
+
+To export a bundle from an existing instance, click on *Export >
+Configuration Bundle*. You will then be presented with a popup window
+asking you for a password and an optional file name.
+
+![](img/image07.png)
+
+The first field is required, so choose a strong password that you can
+remember. The second field will name the file. After completing the
+password field, click on *OK* and you should receive a zip file
+containing the configuration bundle.
+
+To import a bundle from another instance, click on *Import >
+Configuration Bundle*. It will ask you for a file that contains the
+bundle data.
+
+![](img/image06.png)
+
+This is the *.json* file that was contained inside the zip file that you
+received when you exported the configuration bundle in the previous
+step. You cannot upload the zip file itself, however, since it is
+encrypted. Therefore, you must extract the file out of the zip file to a
+known location on your computer, and then find it and select it in the
+import popup window. To do this, double click the zip file, enter in the
+password for the exported file and your computer will open a .json file.
+Select this file for import. After clicking *OK*, the system will
+process for a moment and then present you with a message whether the
+import succeeded or failed.
+
+User Import and Export
+----------------------
+
+User import/export is a similar process, except that you use the
+*Actions* button to the left of the bundle import/export buttons and
+select the desired action. You must be on the Users page (left
+navigation) to see this option.
+
+![](img/image05.png)
+
+Unlike the import for the configuration bundle, the user import accepts
+the zip file; however, you must provide the password to it in the import
+prompt.
+
+Troubleshooting
+---------------
+
+**Incomplete configuration bundle import:** Sometimes a bundle import
+will succeed, but not apply the full set of bundle changes. For example,
+some forms or lookups may go missing. If that is the case, the bundle
+will need to be reapplied again, until the full set of configuration
+changes are observed. It helps to keep a list of expected Forms,
+Lookups, and Roles and then double check that this list appears in the
+configured Primero instance. It is important to note that existing core
+case and incident data will not be erased if the bundle is partially
+applied.
+
+
 Verify
-------
+======
 
 The best way to verify your changes is to simply save a record. Either
 open a new record, or edit an existing one. From here, try to make
@@ -269,7 +360,7 @@ If all of this proceeds without error, it is time to export a
 configuration bundle so you can save the changes you have made so far.
 To do this, follow the steps for exporting a configuration bundle
 outlined in the [*Primero Administration and Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub).
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 Once you have followed these, you should be left with a .zip file.
 Double-click on it. A window will pop up asking you for the password to
 decrypt your file.
@@ -307,10 +398,10 @@ set. To do this, you would simply import
 “20150914-02-added-information-manager-role.json” back into Primero. For
 instructions on how to import a configuration bundle into Primero,
 please see the [*Primero Administration and Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub).
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 
 Rollout
--------
+=======
 
 Once you have configured and verified all of your changes successfully
 and then exported your final config file, it is time to move these
@@ -348,7 +439,7 @@ everything is working, and if necessary, roll back your changes.
 The core of the process is actually as simple as it sounds: import the
 configuration file (using the steps outlined in the [*Primero
 Administration and Configuration
-Guide*](https://docs.google.com/document/u/1/d/1uE2S9lJ2kHu5cNMsrlidzpjEw-o0hSIh4VKS_FaV0FU/pub))
+Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle))
 and then verify that there are no errors editing and saving records.
 (Please note that it may take a few seconds for all your configuration
 changes to load once you have imported the configuration bundle. If you
