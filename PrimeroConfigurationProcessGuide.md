@@ -47,7 +47,7 @@ and depending on how you configure Roles, the Users you create later
 on will quickly fall into place.
 
 _Users are not handled by the configuration bundle; see the [*Primero Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#user-and-role-managementv)_
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#user-and-role-managementv)_
 
 
 After all, a User is only as good as its Role, which allows it to view
@@ -141,7 +141,7 @@ roles each role can manage, it may also be helpful to draw out an
 organizational tree, outlining which team members should be able to
 manage each other’s roles’ permissions. For a more detailed description
 of the permissions roles grant and the role management process, please
-consult the [*Primero Administration and Configuration Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#user-and-role-management).
+consult the [*Primero Administration and Configuration Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#user-and-role-management).
 
 Configure
 =========
@@ -202,7 +202,7 @@ you do not accidentally erase any configuration changes that have
 already been made there. To import the config into your test instance,
 follow the steps for importing a configuration bundle located in the
 [*Primero Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 
 Once this is done, you can start making your first set of changes on the
 test instance. In general, your changes should be made in the following
@@ -218,7 +218,7 @@ you forgot to create in the first place.
 
 For information on how to actually make particular changes in Primero,
 consult the [*Primero Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#testing-administrative-changes-and-data-loads).
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#testing-administrative-changes-and-data-loads).
 As a matter of practice, do not make too many changes at once; try
 creating a form and a few of its text fields, a multi-select field and
 its lookup, or a role and a user to which said role is assigned. Smaller
@@ -360,7 +360,7 @@ If all of this proceeds without error, it is time to export a
 configuration bundle so you can save the changes you have made so far.
 To do this, follow the steps for exporting a configuration bundle
 outlined in the [*Primero Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 Once you have followed these, you should be left with a .zip file.
 Double-click on it. A window will pop up asking you for the password to
 decrypt your file.
@@ -398,7 +398,7 @@ set. To do this, you would simply import
 “20150914-02-added-information-manager-role.json” back into Primero. For
 instructions on how to import a configuration bundle into Primero,
 please see the [*Primero Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle).
 
 Rollout
 =======
@@ -439,7 +439,7 @@ everything is working, and if necessary, roll back your changes.
 The core of the process is actually as simple as it sounds: import the
 configuration file (using the steps outlined in the [*Primero
 Administration and Configuration
-Guide*](../../admin/1.1/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle))
+Guide*](../../admin/PrimeroAdministrationandConfigurationGuide.html#exporting-and-importing-the-configuration-bundle))
 and then verify that there are no errors editing and saving records.
 (Please note that it may take a few seconds for all your configuration
 changes to load once you have imported the configuration bundle. If you

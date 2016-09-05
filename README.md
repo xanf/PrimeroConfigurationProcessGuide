@@ -1,16 +1,11 @@
-![](1.1/img/image16.png)
+![](img/image16.png)
 
-**Primero Configuration Process**
+**Primero Configuration Process Guide**
 
-**Guide**
-
-**Release 1.1.0**
-
-November 2015
 
 ***Prepared for:***
 
-![](1.1/img/image11.png)
+![](img/image11.png)
 
 3 United Nations Plaza
 

@@ -1,25 +1,25 @@
 # Summary
 
 
-*  [*Overview*](1.1/PrimeroConfigurationProcessGuide.md#overview)
+*  [*Overview*](PrimeroConfigurationProcessGuide.md#overview)
 
-*  [*Analyze*](1.1/PrimeroConfigurationProcessGuide.md#analyze)
+*  [*Analyze*](PrimeroConfigurationProcessGuide.md#analyze)
 
-*  [*Plan*](1.1/PrimeroConfigurationProcessGuide.md#plan)
+*  [*Plan*](PrimeroConfigurationProcessGuide.md#plan)
 
-*  [*Configure*](1.1/PrimeroConfigurationProcessGuide.md#configure)
+*  [*Configure*](PrimeroConfigurationProcessGuide.md#configure)
 
-	*  [*Settings: Import and Export Bundles*](1.1/ConfigurationBundles.md#import-and-export-bundles)
+	*  [*Settings: Import and Export Bundles*](ConfigurationBundles.md#import-and-export-bundles)
 
-	*  [*User Import and Export*](1.1/ConfigurationBundles.md#user-import-and-export)
+	*  [*User Import and Export*](ConfigurationBundles.md#user-import-and-export)
 
-	*  [*Troubleshooting*](1.1/ConfigurationBundles.md#troubleshooting)
+	*  [*Troubleshooting*](ConfigurationBundles.md#troubleshooting)
 
-*  [*Verify*](1.1/PrimeroConfigurationProcessGuide.md#verify)
+*  [*Verify*](PrimeroConfigurationProcessGuide.md#verify)
 
-*  [*Rollout*](1.1/PrimeroConfigurationProcessGuide.md#rollout)
+*  [*Rollout*](PrimeroConfigurationProcessGuide.md#rollout)
 
-*  [*Primero IT Support*](1.1/PrimeroConfigurationProcessGuide.md#primero-it-support)
+*  [*Primero IT Support*](PrimeroConfigurationProcessGuide.md#primero-it-support)
 
 
 
