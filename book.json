@@ -1,10 +1,21 @@
 {
     "title" : "Primero Configuration Process Guide",
     "github" : false,
-    "plugins" : [ "-mathjax", "-mixpanel", "fancybox"],
+    "plugins" : [ "-mathjax", "-mixpanel", "edit-link", "downloadpdf"],
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/primeroIMS/PrimeroConfigurationProcessGuide/edit/master/",
+                "label": "Edit This Page"
+            },
+            "downloadpdf": {
+                 "base": "https://www.gitbook.com/download/pdf/book/primero/primero-configuration-process-guide",
+                 "label": "Download PDF",
+                 "multilingual": false
+    }
+    },
     "links" : {
       "sidebar": {
-            "Documentation Home Page": "https://primeroims.github.io/primero/docs/"
+            "Docs Home": "https://primeroims.github.io/primero/docs/"
         },
       "sharing" : {
         "google" : null,
@@ -13,6 +24,3 @@
       }
     }
 }
-
-
-
