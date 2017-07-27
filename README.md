@@ -1,6 +1,6 @@
 ![](img/image16.png)
 
-**Primero Configuration Process Guide**
+**Primerod Configuration Process Guide**
 
 
 ***Prepared for:***
